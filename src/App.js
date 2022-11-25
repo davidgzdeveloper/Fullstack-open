@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import Mensaje from './Mensaje';
 import './App.css';
+
+const Description = () => {             /*los componentes SIEMPRE EMPIEZAN EN MAYUSCULA*/
+ return <p>Esta es la app del fullstack bootcamp</p>
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Mensaje  color = 'red'  message= 'Estamos trabajando'/>
+      <Mensaje color = 'yellow'message= 'En un curso'/>
+      <Mensaje color = 'green' message= 'de React'/>
+      <Description />
     </div>
   );
 }
